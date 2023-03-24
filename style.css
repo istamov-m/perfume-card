@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(30, 38%, 92%);
+    position: relative;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    width: 38em;
+    height: 28em;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 20px 20px rgba(128, 128, 128, 25%);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 33px;
+    border-radius: 0 8px 8px 0;
+    width: 20em;
+    height: 26em;
+    background: hsl(0, 0%, 100%);
+    
+}
+
+.info p {
+    color: hsl(228, 12%, 48%);
+}
+
+.info p:first-child {
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.info p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.info h1 {
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    color: hsl(212, 21%, 14%);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.price h1 {
+    margin: 10px 25px 10px 0;
+    color: hsl(158, 36%, 37%);
+}
+
+.price p {
+    text-decoration: line-through;
+}
+
+main .desctop-img {
+    width: 20em;
+    border-radius: 8px 0 0 8px;
+}
+
+main .mobile-img {
+    position: absolute;
+    visibility: hidden;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.info a {
+    background: hsl(158, 36%, 37%);
+    margin-top: 25px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 13px 70px;
+    align-self: center;
+    transition: all 0.3s;
+}
+
+.info a:hover {
+    background: hsl(159, 36%, 20%);;
+}
+
+.attribution { 
+    position: relative;
+    top: 300px;
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+    main {
+        flex-direction: column;
+        width: 22em;
+        height: 35em;
+    }
+
+    .info {
+        box-shadow: 0 20px 20px rgba(128, 128, 128, 25%);
+        border-radius: 0 0 8px 8px;
+        width: 286px;
+        height: 25em;
+    }
+
+    main .desctop-img {
+        display: none;
+    }
+
+    main .mobile-img {
+        position: relative;
+        width: 22em;
+        visibility: visible;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .info a {
+        width: 11em;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .attribution { 
+        top: 400px;
+    }
+}
+
+
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
