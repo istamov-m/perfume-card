@@ -89,8 +89,10 @@ h1 {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     font-size: 14px;
-    padding: 13px 70px;
+    width: 17em;
+    padding: 13px 0 13px 0;
     align-self: center;
+    text-align: center;
     transition: all 0.3s;
 }
 
@@ -137,7 +139,7 @@ h1 {
     }
 
     .info a {
-        width: 11em;
+        width: 21em;
         margin-bottom: 20px;
         text-align: center;
         font-size: 14px;
